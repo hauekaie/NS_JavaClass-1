@@ -1,4 +1,5 @@
 package NS_FirstClass;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 
 public class Main {
@@ -18,17 +19,19 @@ public class Main {
         }
         imprimirArreglo(i);
 
-        String nombre = "Haziel";
+        StringBuilder nombre = new StringBuilder("Haziel"); //
         String apellido = "Hernandez";
-        System.out.println(nombre);
+        System.out.println(nombre.toString());
+
         agregarApellido(nombre, apellido);
-        System.out.println(nombre);
+        System.out.println(nombre.toString());
 
 
     }
 
-    public static void agregarApellido(String nombre, String apellido){
-        nombre = nombre + apellido;
+    public static void agregarApellido(StringBuilder nombre, String apellido){
+        nombre.append(apellido); //= nombre + apellido;
+        System.out.println(nombre.toString());
     }
 
 
@@ -38,4 +41,6 @@ public class Main {
             System.out.println("arreglo [" + j + "] =" + arreglo[j]);
         }
     }
+
+
 }
