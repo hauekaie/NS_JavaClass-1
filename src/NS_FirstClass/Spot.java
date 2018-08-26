@@ -28,4 +28,7 @@ public class Spot {
     public void setStatus(boolean status) {
         Status = status;
     }
+
+
+
 }

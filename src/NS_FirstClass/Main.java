@@ -27,6 +27,33 @@ public class Main {
         System.out.println(nombre.toString());
 
 
+        Car carro, carro2, carro3;
+        carro = new Car();
+        //CARRO NUMERO UNO
+        carro.setPlates("Las placas son: ASFGT");
+        //String x = carro;
+        carro.setType("El carro es un Sentra");
+        carro2 = new Car();
+        //CARRO NUMERO DOS
+        carro2.setPlates("Las placas son: ASEFT");
+        carro2.setType("El carro es un Ibiza");
+        carro3 = new Car();
+        //CARRO NUMERO TRES
+        carro.setPlates("Las Placas son: TEGYS");
+        carro.setType("El carro es un Jetta");
+
+        //ASIGNACIÓN DEL LUGAR PARA ESTACIONARSE
+        Spot lugar1, lugar2, lugar3;
+        lugar1 = new Spot();
+        //LUGAR NUMERO UNO
+        lugar1.setNumber_of_Spot(1);
+        lugar1.setCar(carro.getPlates());
+        System.out.println(lugar1);
+
+
+
+
+
     }
 
     public static void agregarApellido(StringBuilder nombre, String apellido){
@@ -41,6 +68,5 @@ public class Main {
             System.out.println("arreglo [" + j + "] =" + arreglo[j]);
         }
     }
-
 
 }

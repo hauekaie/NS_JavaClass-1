@@ -1,6 +1,6 @@
 package NS_FirstClass;
 
-public class ParkingLot {
+public class ParkingLot extends Spot{
     private String Spot = "";
     private String Name = "";
 

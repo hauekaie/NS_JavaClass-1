@@ -20,5 +20,8 @@ public class Car {
     public void setType(String type) {
         Type = type;
     }
+
 }
+
+
 
